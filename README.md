@@ -1,69 +1,74 @@
-# FlexBoxDemo
+# FlexBoxDemo Notes
 
-* Notes 
+## Display Property
 
-# Display:
-- 'display:flex' will move items along the main axis
+- `display: flex;` This will arrange items along the main axis.
 
-# Flex-Direction:
-- will define the main and cross axis
-- flex-direction column will make the main axis vertical
-- flex-direction row will make the main horizontal
-- The flex direction is set horizontal by default, so rows is not necessary
+## Flex-Direction Property
 
+- Defines the main and cross axis.
+- `flex-direction: column;` The main axis becomes vertical.
+- `flex-direction: row;` The main axis becomes horizontal (this is the default setting, so `row` is not always necessary).
 
-# Justify-Content:
-- flex-start will align items on left side of main axis
-- flex-end will align items on right side of main axis
-- center will aligns items in the middle
-- space-between will evenly space the items until they fill the container
-- space-around is similar to space-between, but will leave space on the edges of the items
-- space-evenly will do the same thing as space around, but leaves the same space in between the edges and between items
+## Justify-Content Property
 
-# Align-items:
-- same as above, but insteads aligns items on the cross axis
+- `justify-content: flex-start;` Aligns items to the left side of the main axis.
+- `justify-content: flex-end;` Aligns items to the right side of the main axis.
+- `justify-content: center;` Aligns items in the middle of the main axis.
+- `justify-content: space-between;` Distributes items evenly along the main axis, without space at the edges.
+- `justify-content: space-around;` Similar to `space-between`, but with space at the edges.
+- `justify-content: space-evenly;` Distributes items and space evenly, including the edges.
 
-# Flex-Wrap:
-- Items will try to squeeze as much as possible into the main axis
-- 'flex-wrap: warp' will create a new row of items
-- this unlocks the 'align-content' property
+## Align-Items Property
 
-# Align-Content:
-- This allows us to align everything on the cross axis
-- reference justify-content for property key words
+- Aligns items on the cross axis, similar to `justify-content`.
 
-# Gap:
-- This can be used to add gaps in between each items
-- gap requires units of measurements as a value. I've provided notes below:
+## Flex-Wrap Property
 
-# CSS Units of Measurement 
+- Items will try to fit into the main axis as much as possible.
+- `flex-wrap: wrap;` Creates a new row of items, and this unlocks the `align-content` property.
 
-# 1 - Absolute Lengths:
+## Align-Content Property
 
-- px (pixels): A pixel is a dot on the computer screen, and it's the smallest visible unit of measurement. However, its size can vary across devices and screens.
-- pt (points): Traditionally used in print media, with 1pt equivalent to 1/72nd of an inch. It's often less useful on screens.
+- Allows alignment of items on the cross axis. Use the same keywords as in `justify-content`.
 
-# 2 - Relative Lengths:
+## Gap Property
 
-- em: This unit is relative to the font-size of its closest parent. If used to define font-size, it's relative to the font-size of the element itself.
-- rem (root em): This is similar to em, but it's always relative to the root (or highest-level parent) element's font-size, usually the <html> element.
-- vh (viewport height) and vw (viewport width): These are relative to the size of the user's viewport. 1vh is 1% of the viewport's height, and 1vw is 1% of the viewport's width.
-- % (percent): This unit is relative to the size of the parent element.
+- Used to add gaps between each item. Requires a unit of measurement as a value.
 
-# 3 - Flexible Lengths:
+## CSS Units of Measurement 
 
-- fr (fractional units): This unit is used with CSS Grid to represent a fraction of the available space.
+### 1 - Absolute Lengths:
 
-# Flex-grow: 1;
-- Allows the item to grow if there is enough space to do so
+- `px` (pixels): A pixel is a dot on the computer screen, and it's the smallest visible unit of measurement. However, its size can vary across devices and screens.
+- `pt` (points): Traditionally used in print media, with 1pt equivalent to 1/72nd of an inch. It's often less useful on screens.
 
-# Flex-Shrink
-- flex-shrink: 0; will prevent the item from shrinking when the container is collasped
-- flex-shrinks above 0 will cause the item to shrink to a given size, depending on the value, when the container is collasped
+### 2 - Relative Lengths:
 
-# Flex-Basis:
-- Overrides the width of an item
+- `em`: This unit is relative to the font-size of its closest parent. If used to define font-size, it's relative to the font-size of the element itself.
+- `rem` (root em): This is similar to `em`, but it's always relative to the root (or highest-level parent) element's font-size, usually the `<html>` element.
+- `vh` (viewport height) and `vw` (viewport width): These are relative to the size of the user's viewport. `1vh` is 1% of the viewport's height, and `1vw` is 1% of the viewport's width.
+- `%` (percent): This unit is relative to the size of the parent element.
 
-# Align-Self:
-- This is used when you want to adjust placement to a single item inside of a container
+### 3 - Flexible Lengths:
+
+- `fr` (fractional units): This unit is used with CSS Grid to represent a fraction of the available space.
+
+## Flex-grow Property
+
+- `flex-grow: 1;` Allows the item to grow if there is enough space to do so.
+
+## Flex-Shrink Property
+
+- `flex-shrink: 0;` Prevents the item from shrinking when the container is collapsed.
+- `flex-shrink` values above 0 will cause the item to shrink to a given size (relative to the value) when the container is collapsed.
+
+## Flex-Basis Property
+
+- Overrides the width of an item.
+
+## Align-Self Property
+
+- This is used when you want to adjust the placement of a single item inside of a container.
+
 
