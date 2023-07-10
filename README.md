@@ -2,14 +2,18 @@
 
 * Notes 
 
-# Flex
+# Display:
 - 'display:flex' will move items along the main axis
+
+# Flex-Direction:
+- will define the main and cross axis
 - flex-direction column will make the main axis vertical
 - flex-direction row will make the main horizontal
 - The flex direction is set horizontal by default, so rows is not necessary
 
+
 # Justify-Content:
-- flex-start will align items on left side of horizontal axis
+- flex-start will align items on left side of main axis
 - flex-end will align items on right side of main axis
 - center will aligns items in the middle
 - space-between will evenly space the items until they fill the container
@@ -17,4 +21,5 @@
 - space-evenly will do the same thing as space around, but leaves the same space in between the edges and between items
 
 # Align-items:
-- same as above, but insteads aligns items on the vertical axis
+- same as above, but insteads aligns items on the cross axis
+
