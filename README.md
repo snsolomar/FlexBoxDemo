@@ -34,7 +34,7 @@
 
 # Gap:
 - This can be used to add gaps in between each items
-- use 'em' 
+- gap requires units of measurements as a value. I've provided notes below:
 
 # CSS Units of Measurement 
 
@@ -53,3 +53,17 @@
 # 3 - Flexible Lengths:
 
 - fr (fractional units): This unit is used with CSS Grid to represent a fraction of the available space.
+
+# Flex-grow: 1;
+- Allows the item to grow if there is enough space to do so
+
+# Flex-Shrink
+- flex-shrink: 0; will prevent the item from shrinking when the container is collasped
+- flex-shrinks above 0 will cause the item to shrink to a given size, depending on the value, when the container is collasped
+
+# Flex-Basis:
+- Overrides the width of an item
+
+# Align-Self:
+- This is used when you want to adjust placement to a single item inside of a container
+
